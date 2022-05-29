@@ -1,2 +1,2 @@
 # Barbearia
- Projeto barbearia alura, desenvolvido com html e css.
+ Projeto site Barbearia Alura, utilizando as tecnologias html e css.
