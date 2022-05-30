@@ -25,6 +25,7 @@
 		<main>
 			<form>
 				<label for="nomesobrenome">Nome e sobrenome</label>
+				<!--No label vai o que será escrito acima da caixa do input-->
 				<input type="text" id="nomesobrenome">
 
 				<label for="email">Email</label>
@@ -33,6 +34,24 @@
 				<label for="telefone">Telefone</label>
 				<input type="text" id="telefone">
 
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem"></textarea>
+				<!--textarea é uma tag de conteúdo de texto-->
+				<!--cols e rows são a largura e altura do texto-->
+				<div>
+				<p>Como prefere o nosso contato</p>
+				<label for="radio-email">Email</label>
+				<input type="radio" name="contato" value="email" id="radio-email">
+				<!--o name="contato" serve para marcar apenas uma opção-->
+				<label for="radio-telefone">Telefone</label>
+				<input type="radio" name="contato" value="telefone" id="radio-telefone">
+
+				<label for="radio-whatsapp">Whatsapp</label>
+				<input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+				</div>
+
+				<label><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+				<!--checkbox é o quadrado que você seleciona-->
 				<input type="submit" value="Enviar formulário">
 			</form>
 		</main>
