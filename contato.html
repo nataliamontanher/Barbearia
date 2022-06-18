@@ -26,16 +26,21 @@
 			<form>
 				<label for="nomesobrenome">Nome e sobrenome</label>
 				<!--No label vai o que será escrito acima da caixa do input-->
-				<input type="text" id="nomesobrenome" class="input-padrao">
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+				<!--O required quer dizer campo obrigatorio-->
 
 				<label for="email">Email</label>
-				<input type="text" id="email" class="input-padrao">
+				<input type="email" id="email" class="input-padrao" 
+				required placeholder="seuemail@dominio.com">
+				<!--O type email é para o html em mobile-->
 
 				<label for="telefone">Telefone</label>
-				<input type="text" id="telefone" class="input-padrao">
+				<input type="tel" id="telefone" class="input-padrao" 
+				required placeholder="(xx) xxxxx-xxxx" >
+				<!--O type tel é para o html em mobile-->
 
 				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 				<!--textarea é uma tag de conteúdo de texto-->
 				<!--cols e rows são a largura e altura do texto-->
 				<div>
@@ -45,8 +50,10 @@
 				<!--o name="contato" serve para marcar apenas uma opção-->
 				<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
 				
-				<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
-				
+				<label for="radio-whatsapp"><input type="radio" 
+				name="contato" value="whatsapp" id="radio-whatsapp" checked>
+				Whatsapp</label>
+				<!--checked vai deixar o radio do whatsapp sempre marcado-->
 				</div>
 
 				<div>
@@ -59,7 +66,8 @@
 				</div>
 
 				<label class="checkbox">
-					<input type="checkbox"><!--checkbox é o quadrado que você seleciona-->
+					<input type="checkbox" checked>
+					<!--checkbox é o quadrado que você seleciona-->
 					Gostaria de receber nossas novidades por email?
 				</label>
 			
