@@ -43,8 +43,9 @@
 				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
 				<!--textarea é uma tag de conteúdo de texto-->
 				<!--cols e rows são a largura e altura do texto-->
-				<div>
-				<p>Como prefere o nosso contato?</p>
+				
+				<fieldset>
+				<legend>Como prefere o nosso contato?</legend>
 				<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 				
 				<!--o name="contato" serve para marcar apenas uma opção-->
@@ -54,16 +55,16 @@
 				name="contato" value="whatsapp" id="radio-whatsapp" checked>
 				Whatsapp</label>
 				<!--checked vai deixar o radio do whatsapp sempre marcado-->
-				</div>
+				</fieldset>
 
-				<div>
-					<p>Qual horário prefere ser atendido?</p>
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
 					<select>
 						<option>Manhã</option>
 						<option>Tarde</option>
 						<option>Noite</option>
 					</select>
-				</div>
+				</fieldset>
 
 				<label class="checkbox">
 					<input type="checkbox" checked>
