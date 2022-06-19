@@ -162,6 +162,8 @@ td, th {
 	/*O 2em significa que a fonte do titulo principal
 	sempre vai ser o dobro da fonte base que está sendo utilizada*/
 	margin: 0 0 1em;
+	clear: left;
+	/*limpa a configuração do foat*/
 }
 
 .principal p{
@@ -174,6 +176,13 @@ td, th {
 
 .principal em{
 	font-style: italic;
+}
+
+.utensilios{
+	width: 120px;
+	float: left;
+	/* o float vai fazer o texto ficar em volta do elemento utensilios*/
+	margin: 0 20px 20px 0;
 }
 
 .imagembeneficios {
