@@ -1,3 +1,9 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	/*acima estamos usando fontes externas do google fonts*/
+	/* essa fonte ficara no site inteiro*/
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
