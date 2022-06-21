@@ -171,6 +171,16 @@ td, th {
 	/*limpa a configuração do foat*/
 }
 
+.titulo-principal:first-letter {
+	font-weight: bold;
+	/*Colocamos a primeirra letra em negrito*/
+}
+
+/*p:first-line{
+	font-style: italic;
+}
+aqui você pode deixar a primeira linha em itálico
+*/
 .principal {
 	padding: 3em 0;
 	background: #FEFEFE;
@@ -199,7 +209,7 @@ td, th {
 
 .mapa {
 	padding: 3em 0;
-	background: linear-gradient(#FEFEFE,#888888);
+	background: linear-gradient(#FEFEFE ,#888888);
 	/*O linear-gradiente faz o gradiente entre duas cores*/
 	/*O radio-gradiente faz o gradiente em circulos*/
 }
@@ -236,12 +246,15 @@ td, th {
 	/*no caso 1.5 corresponde ao temanho da fonte mais 50%*/
 }
 
-.itens:first-child {
+/* .itens:first-child {
 	font-weight: bold;
 	/*Primeira criança ou primeiro irmão vai ser em negrito*/
 	/*Para a ultima criança usa-se last-child*/
 	/*Para a um elemento da lista usa se nth-child(4), no caso 4  e o numero do elemento*/
 	/*nth-child(2n) o 2n pega todos os elementos pares*/
+
+.itens:before {
+    content: "★";
 }
 
 .imagem-beneficios {
