@@ -258,10 +258,15 @@ aqui você pode deixar a primeira linha em itálico
 }
 
 .imagem-beneficios {
-	width: 60%;
+    width: 60%
+    opacity: 0.3;/*opacidade 30%*/
+    transition: 400ms;/*transição de 400 milisegundos*/
+	box-shadow: 10px 10px 10px 0 #000000;/* x y sombra com transparencia e cor, desloca a sombra*/
 }
 
-
+.imagem-beneficios:hover {
+	opacity: 1;/*opacidade 100%*/
+}
 
 .video {
 	width: 560px;
