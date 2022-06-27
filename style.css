@@ -258,7 +258,7 @@ aqui você pode deixar a primeira linha em itálico
 }
 
 .imagem-beneficios {
-    width: 60%
+    width: 60%;
     opacity: 0.3;/*opacidade 30%*/
     transition: 400ms;/*transição de 400 milisegundos*/
 	box-shadow: 10px 10px 10px 0 #000000;/* x y sombra com transparencia e cor, desloca a sombra*/
@@ -275,7 +275,20 @@ aqui você pode deixar a primeira linha em itálico
 
 
 @media screen and (max-width: 480px) {
-    body {
-        background: red;
+	/*media queries*/
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
     }
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+	
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
 }
